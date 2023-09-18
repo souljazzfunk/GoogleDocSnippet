@@ -4,10 +4,9 @@ import random
 import time
 import tweepy
 import sys
-sys.path.append('..')
+import os
+sys.path.append(os.environ.get('API_KEYS'))
 from api_keys import GoogleDocKeys, TwitterApiKeys
-# import os
-# sys.path.append(os.environ.get('API_KEYS'))
 
 # Initialize the API client
 my = GoogleDocKeys()

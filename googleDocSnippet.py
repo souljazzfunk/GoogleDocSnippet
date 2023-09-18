@@ -1,12 +1,13 @@
-import random
-import time
-from myid import GoogleDocKeys
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
+import random
+import time
 import tweepy
 import sys
 sys.path.append('..')
-from api_keys import TwitterApiKeys
+from api_keys import GoogleDocKeys, TwitterApiKeys
+# import os
+# sys.path.append(os.environ.get('API_KEYS'))
 
 # Initialize the API client
 my = GoogleDocKeys()
@@ -155,6 +156,7 @@ def post_thread(tweets):
 
 try:
     post_thread(tweets)
+    # [print(t, "\n") for t in tweets]
 except Exception as e:
     print(f"error: {e}")
     print(tweets)

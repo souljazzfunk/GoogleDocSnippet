@@ -22,7 +22,7 @@ This Python script utilizes Google Docs API and Tweepy to create a Twitter threa
 1. **Set Environment Variable for API Keys**
 
     ```bash
-    export API_KEYS=/path/to/api_keys/
+    export API_KEYS="/path/to/api_keys"
     ```
 
 2. **Run the Script**

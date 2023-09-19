@@ -11,6 +11,11 @@ This Python script utilizes Google Docs API and Tweepy to create a Twitter threa
 - Posts the segmented content as a Twitter thread.
 - Adds a promotional tweet at the end of the thread.
 
+## Requirements
+
+- Google Docs API
+- Tweepy
+
 ## Installation
 
 1. Clone the repository to your local machine.
@@ -30,11 +35,6 @@ This Python script utilizes Google Docs API and Tweepy to create a Twitter threa
     ```bash
     python googleDocSnippet.py
     ```
-
-## Requirements
-
-- Google Docs API
-- Tweepy
 
 ## License
 

@@ -87,12 +87,12 @@ while True:
         break
 
 def calculate_weighted_length(char):
-    if char.isspace():  # Whitespace
-        return 1
-    elif char.isascii():  # ASCII characters
+    if char == '　':  # Full-width space
+        return 2
+    elif char.isspace() or char.isascii():  # Whitespace or ASCII
         return 1
     elif len(char.encode('utf-8')) > 1:  # Multi-byte characters (Assuming these are Japanese)
-        return int((len(char.encode('utf-8')) / 3) * 2)
+        return 2
     else:
         print(f"Unhandled character: {char}")
         return 2  # Default handling
